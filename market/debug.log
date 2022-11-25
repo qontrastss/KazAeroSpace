@@ -1,0 +1,5 @@
+2022-11-25 16:44:26,945 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-25 16:45:02,662 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-25 16:45:03,123 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-25 16:46:09,481 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-25 16:46:09,913 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
