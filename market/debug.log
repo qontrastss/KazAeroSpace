@@ -3,3 +3,596 @@
 2022-11-25 16:45:03,123 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
 2022-11-25 16:46:09,481 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
 2022-11-25 16:46:09,913 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:30:33,327 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:31:06,886 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 03:31:07,188 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:31:12,485 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 03:31:12,751 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:31:19,049 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:31:19,351 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:31:28,977 django.request WARNING  241 Not Found: /api/v1/merchant/products/
+2022-11-26 03:31:40,363 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 03:32:09,113 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 03:32:17,754 django.request ERROR    241 Internal Server Error: /api/v1/merchants/products/
+Traceback (most recent call last):
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 1052, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 1148, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'image' was declared on serializer ProductShortSerializer, but has not been included in the 'fields' option.
+2022-11-26 03:33:08,588 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:33:08,885 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:33:10,977 django.request ERROR    241 Internal Server Error: /api/v1/merchants/products/
+Traceback (most recent call last):
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/home/aslan/Desktop/kazaero/market/merchant/serializers.py", line 32, in get_is_favorite
+    fav_products = Favorites.objects.filter(user=self.request.user).first()
+AttributeError: 'ProductShortSerializer' object has no attribute 'request'
+2022-11-26 03:36:15,886 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:36:16,187 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:36:19,041 django.request ERROR    241 Internal Server Error: /api/v1/merchants/products/
+Traceback (most recent call last):
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/home/aslan/Desktop/kazaero/market/merchant/serializers.py", line 33, in get_is_favorite
+    return True if obj in fav_products.products.all() else False
+AttributeError: 'NoneType' object has no attribute 'products'
+2022-11-26 03:37:23,800 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:37:24,114 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:39:02,773 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/urls.py changed, reloading.
+2022-11-26 03:39:03,113 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:40:11,713 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:40:12,029 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:40:44,731 django.request ERROR    241 Internal Server Error: /api/v1/merchants/products/550/
+Traceback (most recent call last):
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/home/aslan/Desktop/kazaero/market/merchant/serializers.py", line 51, in get_similar_products
+    return ProductRecomendSerializer(Product.objects.filter(Q(model__icontains=obj.model))).data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `store__name` is not valid for model `Product`.
+2022-11-26 03:42:43,166 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:42:43,497 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:42:46,432 django.request ERROR    241 Internal Server Error: /api/v1/merchants/products/550/
+Traceback (most recent call last):
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/home/aslan/Desktop/kazaero/market/merchant/serializers.py", line 57, in get_similar_products
+    return ProductRecomendSerializer(Product.objects.filter(Q(model__icontains=obj.model))).data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/home/aslan/Desktop/kazaero/market/merchant/serializers.py", line 45, in get_store_name
+    return obj.store.name if obj.store else None
+AttributeError: 'QuerySet' object has no attribute 'store'
+2022-11-26 03:45:08,608 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:45:08,905 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:45:11,412 django.request WARNING  241 Not Found: /api/v1/merchants/products/550/
+2022-11-26 03:45:22,562 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 03:45:22,903 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:45:24,852 django.request ERROR    241 Internal Server Error: /api/v1/merchants/products/550/
+Traceback (most recent call last):
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/generics.py", line 83, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/aslan/Desktop/kazaero/market/merchant/views.py", line 41, in get_queryset
+    print(self.request.DATA)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/request.py", line 422, in DATA
+    raise NotImplementedError(
+NotImplementedError: `request.DATA` has been deprecated in favor of `request.data` since version 3.0, and has been fully removed as of version 3.2.
+2022-11-26 03:45:55,912 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 03:45:56,243 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:46:01,301 django.request ERROR    241 Internal Server Error: /api/v1/merchants/products/550/
+Traceback (most recent call last):
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/home/aslan/Desktop/kazaero/market/merchant/serializers.py", line 56, in get_similar_products
+    return ProductRecomendSerializer(Product.objects.filter(Q(model__icontains=obj.model))).data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/home/aslan/Desktop/kazaero/market/merchant/serializers.py", line 44, in get_store_name
+    return obj.store.name if obj.store else None
+AttributeError: 'QuerySet' object has no attribute 'store'
+2022-11-26 03:46:19,031 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:46:19,329 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:46:22,309 django.request ERROR    241 Internal Server Error: /api/v1/merchants/products/550/
+Traceback (most recent call last):
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/home/aslan/Desktop/kazaero/market/merchant/serializers.py", line 57, in get_similar_products
+    return ProductRecomendSerializer(Product.objects.filter(Q(model__icontains=obj.model))).data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/home/aslan/Desktop/kazaero/market/merchant/serializers.py", line 45, in get_store_name
+    return obj.store.name if obj.store else None
+AttributeError: 'QuerySet' object has no attribute 'store'
+2022-11-26 03:48:17,037 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:48:17,340 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:49:13,870 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:49:14,205 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:49:16,989 django.request ERROR    241 Internal Server Error: /api/v1/merchants/products/550/
+Traceback (most recent call last):
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/home/aslan/Desktop/kazaero/market/merchant/serializers.py", line 56, in get_similar_products
+    return ProductRecomendSerializer(Product.objects.filter(Q(model__icontains=obj.model)).exclude(obj), many=True).data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1428, in exclude
+    return self._filter_or_exclude(True, args, kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1443, in _filter_or_exclude_inplace
+    self._query.add_q(~Q(*args, **kwargs))
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1404, in build_filter
+    arg, value = filter_expr
+TypeError: cannot unpack non-iterable Product object
+2022-11-26 03:49:38,046 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:49:38,381 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:49:40,770 django.request ERROR    241 Internal Server Error: /api/v1/merchants/products/550/
+Traceback (most recent call last):
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/home/aslan/Desktop/kazaero/market/merchant/serializers.py", line 56, in get_similar_products
+    return ProductRecomendSerializer(Product.objects.filter(Q(model__icontains=obj.model)).exclude(obj.id), many=True).data
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1428, in exclude
+    return self._filter_or_exclude(True, args, kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1443, in _filter_or_exclude_inplace
+    self._query.add_q(~Q(*args, **kwargs))
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1404, in build_filter
+    arg, value = filter_expr
+TypeError: cannot unpack non-iterable int object
+2022-11-26 03:50:10,226 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:50:10,547 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:50:34,335 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/serializers.py changed, reloading.
+2022-11-26 03:50:34,653 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:52:38,754 django.request WARNING  241 Unauthorized: /api/v1/merchants/search/
+2022-11-26 03:53:52,554 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 03:53:52,875 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:54:20,785 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 03:54:21,113 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:54:42,864 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 03:54:43,164 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:56:32,801 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 03:56:33,096 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:56:47,990 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:58:28,211 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 03:58:28,520 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 03:58:57,513 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 03:58:57,846 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 04:00:14,807 django.request ERROR    241 Internal Server Error: /api/v1/merchants/add/favorites/93/
+Traceback (most recent call last):
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/market/merchant/views.py", line 59, in add_favorites
+    if product in favorite.products.all():
+AttributeError: 'NoneType' object has no attribute 'products'
+2022-11-26 04:01:19,949 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 04:01:20,266 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 04:01:57,293 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 04:01:57,633 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 04:12:38,780 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 04:12:52,161 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/urls.py changed, reloading.
+2022-11-26 04:12:52,449 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 04:13:42,692 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/urls.py changed, reloading.
+2022-11-26 04:13:43,029 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 04:14:27,171 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 04:14:27,461 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 04:15:16,782 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 04:15:17,099 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 04:15:46,959 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 04:15:47,238 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 04:16:15,106 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 04:16:15,423 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 04:18:32,416 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/urls.py changed, reloading.
+2022-11-26 04:18:32,721 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 04:46:13,907 django.request WARNING  241 Bad Request: /api/v1/users/register/
+2022-11-26 04:50:23,242 django.request WARNING  241 Bad Request: /api/v1/users/auth/
+2022-11-26 05:01:22,811 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:03:44,308 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:03:44,674 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:04:02,264 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:04:02,587 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:04:38,500 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:04:55,060 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:05:24,812 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:05:25,108 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:06:23,378 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:06:23,659 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:06:48,469 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:06:48,771 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:09:01,291 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:09:29,494 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:19:29,605 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:19:29,901 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:19:38,300 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:19:38,606 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:21:02,480 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:23:37,430 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:27:16,962 django.request WARNING  241 Not Found: /api/v1/
+2022-11-26 05:27:17,578 django.request WARNING  241 Not Found: /favicon.ico
+2022-11-26 05:27:25,296 django.request WARNING  241 Not Found: /api/v1/merchants/
+2022-11-26 05:27:33,093 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:28:05,073 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:28:07,297 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:28:10,829 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:28:50,348 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:28:57,210 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:29:01,306 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:29:19,837 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:30:34,879 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:30:35,196 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:32:19,602 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:32:23,810 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:32:27,998 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:33:27,084 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:33:27,401 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:36:02,741 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/market/settings.py changed, reloading.
+2022-11-26 05:36:03,026 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:42:57,902 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 05:42:58,203 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:43:08,293 django.request ERROR    241 Internal Server Error: /api/v1/merchants/products/
+Traceback (most recent call last):
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/aslan/Desktop/kazaero/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/aslan/Desktop/kazaero/market/merchant/views.py", line 21, in post
+    return self.list(request, *args, **kwargs)
+AttributeError: 'ProductListView' object has no attribute 'list'
+2022-11-26 05:43:43,471 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 05:43:43,789 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 05:45:55,875 django.request WARNING  241 Not Found: /
+2022-11-26 05:46:43,915 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:46:43,916 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:46:58,214 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:46:58,379 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 05:51:01,078 django.utils.autoreload INFO     266 /home/aslan/Desktop/kazaero/market/merchant/views.py changed, reloading.
+2022-11-26 05:51:01,464 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 08:49:16,988 django.utils.autoreload INFO     677 Watching for file changes with StatReloader
+2022-11-26 11:27:26,940 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 11:27:26,940 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 11:27:53,077 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
+2022-11-26 11:27:53,078 django.request WARNING  241 Unauthorized: /api/v1/merchants/products/
