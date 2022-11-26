@@ -7,7 +7,7 @@ FROM python:3.10
 ENV PYTHONUNBUFFERED 1
 
 # Get the Real World example app
-RUN git clone https://github.com/qontrastss/KazAeroSpace.git
+RUN git clone https://github.com/qontrastss/KazAeroSpace.git /kazaero
 
 # Set the working directory to /drf
 # NOTE: all the directives that follow in the Dockerfile will be executed in
@@ -19,7 +19,7 @@ RUN ls .
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
 
-VOLUME /kazaero
+VOLUME /kazaero/market
 
 EXPOSE 8080
 
